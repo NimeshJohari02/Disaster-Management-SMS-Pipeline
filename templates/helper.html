@@ -1,0 +1,10 @@
+{% extends 'basic.html'%}
+{% block content %}
+{% for element in cards %}
+<p>
+Id : {{element.id}}
+Classified As : {{element.typeClassified}}
+Location:{{element.Location}}
+</p>
+{% endfor %}
+{% endblock content %}
